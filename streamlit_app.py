@@ -55,6 +55,9 @@ if st.button("Predict Epilepsy's Risk"):
         # Display Results
         st.success(f"🧠 **Predicted Epilepsy's Risk Percentage:** {risk_percent:.2f}%")
         st.info(f"**Risk Status:** {risk_status}")
+        st.write(f"Scaled Input Data: {input_data_scaled}")
+        st.write(f"Raw Model Prediction (Scaled): {pred_scaled}")
+        st.write(f"Predicted Risk Percentage (After Inversion): {risk_percent}")
 
     except Exception as e:
         st.error(f"Error: {str(e)}")
