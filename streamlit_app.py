@@ -20,19 +20,19 @@ st.write("""
 """)
 
 # User Input Fields (with adjusted min values)
-mean = st.number_input("Mean Value", min_value=-100.0, format="%.6f")
-variance = st.number_input("Variance", min_value=0.0, format="%.6f")
-std_dev = st.number_input("Standard Deviation", min_value=0.0, format="%.6f")
-skewness = st.number_input("Skewness", min_value=-10.0, format="%.6f")  # Skewness can be negative
-kurtosis = st.number_input("Kurtosis", min_value=-10.0, format="%.6f")  # Kurtosis can be negative
-entropy = st.number_input("Entropy", min_value=-10.0, format="%.6f")  # Entropy can be negative
-fft_mean = st.number_input("FFT Mean", min_value=-1000.0, format="%.6f")  # Can be negative
-fft_max = st.number_input("FFT Max", min_value=0.0, format="%.6f")
-delta_power = st.number_input("Delta Power", min_value=0.0, format="%.6f")
-theta_power = st.number_input("Theta Power", min_value=0.0, format="%.6f")
-alpha_power = st.number_input("Alpha Power", min_value=0.0, format="%.6f")
-beta_power = st.number_input("Beta Power", min_value=0.0, format="%.6f")
-gamma_power = st.number_input("Gamma Power", min_value=0.0, format="%.6f")
+mean = st.number_input("Mean Value")
+variance = st.number_input("Variance")
+std_dev = st.number_input("Standard Deviation")
+skewness = st.number_input("Skewness")  # Skewness can be negative
+kurtosis = st.number_input("Kurtosis")  # Kurtosis can be negative
+entropy = st.number_input("Entropy")  # Entropy can be negative
+fft_mean = st.number_input("FFT Mean")  # Can be negative
+fft_max = st.number_input("FFT Max")
+delta_power = st.number_input("Delta Power")
+theta_power = st.number_input("Theta Power")
+alpha_power = st.number_input("Alpha Power")
+beta_power = st.number_input("Beta Power")
+gamma_power = st.number_input("Gamma Power")
 
 # Make Prediction on Button Click
 if st.button("Predict Epilepsy's Risk"):
